@@ -1,0 +1,398 @@
+/*-----------------------------------------------------------
+* Project Name     : top plan website
+* Author           : amr nasser
+* Version          : 1.0.0 Arabic
+* Created          : july 2021
+* File Description : Main css file of this Project
+*------------------------------------------------------------
+colors : #073E65 , #C59D79
+*/
+body {
+    font-family     : 'Cairo', sans-serif;
+    font-size       : 16px;
+    font-weight     : 400;
+    overflow-x      : hidden;
+    background-color: #ffffff;
+    line-height     : 1.5;
+    direction       : rtl;
+}
+/* static */ 
+.section-padding{
+    padding-top: 75px;
+}
+.section-title{
+    padding: 30px 0px;
+    color: #073E65;
+    font-weight: bolder;
+}
+.section-h2{
+    padding: 10px 0px;
+    color: #C59D79;
+    font-weight: bolder;
+}
+
+.section-p{
+    padding: 10px 0px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.blue{
+    color: #073E65;
+}
+.bayj{
+    color: #C59D79;
+}
+.padding-bottom{
+    padding-bottom: 75px;
+}
+.no-padding{
+    padding: 0%;
+}
+/* static */ 
+
+/* nav bar */ 
+
+.navbar{
+    background-color: #ffffff;
+    box-shadow      : 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand{
+    margin-right: 25%;
+}
+.navbar-nav{
+padding-left: 50%;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #073E65;
+    font-weight: bolder;
+    font-size: larger;
+
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link,.navbar-light .navbar-nav .nav-link:hover{
+    color: #C59D79;
+    font-weight: bolder;
+}
+
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    background: #C59D79;
+    transition: width .3s;
+    transform: translate(0, 20px);
+}
+.navbar-light .navbar-nav .nav-link.active::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #C59D79;
+    transition: width .3s;
+    transform: translate(0, 20px);
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+
+/* nav bar end */ 
+
+
+/* header */ 
+header h2{
+    color: #073E65;
+    line-height: 45px;
+}
+/* header end */
+
+/* our services in hone start */ 
+
+
+.caption{
+    padding: 8%;
+    height: 100px;
+    background-color: #073E65;
+    color: #ffffff;
+}
+.caption:hover{
+    cursor: pointer;
+    background-color: #C59D79;
+}
+.counter{
+    z-index: 1;
+     margin-top: -50px;
+      font-weight: bold; 
+      color: #ffffff;
+}
+.background-{
+    background: linear-gradient(to left, #C59D79 50%, #ffffff 50% );  
+    
+}
+.home-4{
+    padding-top: 100%;
+}
+ /* our services in home end */
+
+ /* about in home start */ 
+ .number{
+     color: #073E65;
+     font-weight: bolder;
+ }
+
+ /* about in home end */
+
+/* footer start */
+footer p{
+    color: #073E65;
+}
+.social a{
+    color: #C59D79;
+    text-decoration: none;
+    padding: 0 5px;
+    font-size: 20px;
+}
+/* footer end */
+
+
+/* about page start */
+.line-title::after{
+    content: '';
+    display: block;
+    width: 15%;
+    height: 5px;
+    background: #073E65;
+    transition: width .3s;
+    transform: translate(0, 20px);
+}
+
+/* about page end */
+
+/* our services page */ 
+.hero{
+    background-color: #073E65;
+    height: 650px;
+}
+.titlee-ourservices{
+    color: #ffffff;
+    padding-top: 15px;
+    text-align: justify;
+}
+.contianue{
+    background-color: #C59D79;
+    width: 50%;
+    height: 271px;
+     transform: translate(-97%,0); 
+    z-index: -1;
+}
+.icon{
+position: relative;
+left: 7%;
+}
+.hover-services{
+    padding: 7%;
+}
+.hover-services:hover{
+    border: #C59D79 4px solid;
+    transition: all ease;
+    cursor: pointer;
+}
+/* our services page end */ 
+
+/* contact us page */ 
+.form-head{
+    color: #073E65;
+}
+.form-control{
+    border: none;
+    border-bottom: 3px solid #073E65;
+    border-radius: 0;
+    width: 50%;
+    color: #C59D79;
+    padding-top: 35px;
+}
+.form-control::placeholder{
+    color: #C59D79;
+}
+textarea{
+    resize: none;
+}
+.btn-primary{
+    background-color: #073E65;
+    margin-top: 15px;
+    width: 25%;
+    color: #ffffff;
+    border: none;
+}
+/* contact us page end
+
+/* media query */ 
+
+/*768*/
+@media(max-width:768px) and (min-width:426px){
+    /* index page */
+    /* nav bar brand */
+    .navbar-brand{
+        margin-right: 10%;
+    }
+    /* nav bar collabse */
+    .navbar-light .navbar-toggler{
+        margin-left: 10%;
+    }
+                /* after nav */
+                .navbar-light .navbar-nav .nav-link.active::after{
+                    width: 30%;
+                    transform: translate(0, 10px);
+                }
+    /* services background */
+    .background-{
+        background: linear-gradient(to left,#fff 50% , #fff 50%);
+    }
+    /* services caption */ 
+    .caption{
+        padding: 4%;
+    }
+    /* div 4 */
+    .home-4{
+        padding-top: 5%;
+    }
+    /* services page */ 
+    .hover-services:nth-child(1){
+        margin-top: 10%;
+    }
+    }
+/* 425 */
+@media(max-width:425px) and (min-width:376px){
+/* index page */
+    /* nav bar brand */
+    .navbar-brand{
+        margin-right: 7%;
+    }
+        /* nav bar collabse */
+        .navbar-light .navbar-toggler{
+            margin-left: 10%;
+        }
+                    /* after nav */
+                    .navbar-light .navbar-nav .nav-link.active::after{
+                        width: 60%;
+                        transform: translate(0, 10px);
+                    }
+            /* services background */
+    .background-{
+        background: linear-gradient(to left,#fff 50% , #fff 50%);
+    }
+        /* services caption */ 
+        .caption{
+            padding: 5%;
+        }
+            /* div 4 */
+    .home-4{
+        padding-top: 5%;
+    }
+    /* our services page */
+    .contianue{
+        background-color: #ffffff;
+        padding: 0%;
+    }
+    .hover-services:nth-child(1){
+        margin-top: -50%;
+        margin-bottom: 40%;
+    }
+    .form-control,.btn-primary{
+        margin-right: 5%;
+    }
+}
+/* 375 */
+@media(max-width:375px) and (min-width:321px){
+    /* index page */
+    /* nav bar brand */
+    .navbar-brand{
+        margin-right: 7%;
+        width: 100px;
+    }
+            /* nav bar collabse */
+            .navbar-light .navbar-toggler{
+                margin-left: 10%;
+            }
+            /* after nav */
+            .navbar-light .navbar-nav .nav-link.active::after{
+                width: 70%;
+                transform: translate(0, 10px);
+            }
+                        /* services background */
+    .background-{
+        background: linear-gradient(to left,#fff 50% , #fff 50%);
+    }
+        /* services caption */ 
+        .caption{
+            padding: 5%;
+        }
+            /* div 4 */
+    .home-4{
+        padding-top: 5%;
+    }
+}
+/* 320 */
+@media(max-width:320px){
+        /* index page */
+    /* nav bar brand */
+    .navbar-brand{
+        margin-right: 7%;
+        width: 90px;
+    }
+            /* nav bar collabse */
+            .navbar-light .navbar-toggler{
+                margin-left: 10%;
+            }
+            /* after nav */
+            .navbar-light .navbar-nav .nav-link.active::after{
+                width: 60%;
+                height: 3px;
+                transform: translate(0, 10px);
+            }
+            .navbar-light .navbar-nav .nav-link{
+            font-size: 15px;
+            
+            }
+            .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link,.navbar-light .navbar-nav .nav-link:hover{
+                font-size: 15px;
+            }
+                                   /* services background */
+    .background-{
+        background: linear-gradient(to left,#fff 50% , #fff 50%);
+    }
+        /* services caption */ 
+        .caption{
+            padding: 5%;
+        }
+            /* div 4 */
+    .home-4{
+        padding-top: 5%;
+    }
+        /* our services page */
+        .contianue{
+            background-color: #ffffff;
+            padding: 0%;
+        }
+        .hover-services:nth-child(1){
+            margin-top: -117%;
+            margin-bottom: 100%;
+        }
+        .form-control,.btn-primary{
+            margin-right: 5%;
+        }
+        .contact-footer{
+            margin-top: -78%;
+        }
+        .form-control,.btn-primary{
+            margin-right: 7%;
+        }
+        .titlee-ourservices{
+            font-size: 20px;
+            margin-top: 25px;
+        }
+}
+
