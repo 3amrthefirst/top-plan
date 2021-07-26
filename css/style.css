@@ -227,6 +227,10 @@ textarea{
     color: #ffffff;
     border: none;
 }
+.btn-primary:hover{
+background-color: #C59D79;
+border: #C59D79;
+}
 /* contact us page end
 
 /* media query */ 
